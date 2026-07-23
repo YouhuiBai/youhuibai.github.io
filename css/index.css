@@ -1,3 +1,132 @@
+.publications-page .page-title {
+  margin-bottom: 1rem;
+}
+.publications-content .publication-year {
+  margin-bottom: 3.6rem;
+}
+.publications-content .publication-year-title {
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #d9dde1;
+  color: #202428;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+.publications-content .publication-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.publications-content .publication-item {
+  display: grid;
+  grid-template-columns: 8.4rem minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid #edf0f2;
+}
+.publications-content .publication-item:last-child {
+  border-bottom: 0;
+}
+.publications-content .publication-venue {
+  box-sizing: border-box;
+  width: 8.4rem;
+  margin-top: 0.25rem;
+  padding: 0.55rem 0.5rem;
+  border-radius: 4px;
+  background: #33434d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.publications-content .publication-body {
+  min-width: 0;
+}
+.publications-content .publication-title {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.publications-content .publication-title a {
+  color: #174f78;
+  text-decoration: none;
+}
+.publications-content .publication-title a:hover {
+  color: #a43b32;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
+}
+.publications-content .publication-authors {
+  margin: 0.55rem 0 0;
+  color: #454b50;
+  font-size: 1.55rem;
+  line-height: 1.45;
+}
+.publications-content .publication-authors strong {
+  color: #202428;
+  font-weight: 700;
+}
+.publications-content .publication-meta {
+  margin: 0.35rem 0 0;
+  color: #737a80;
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+.publications-content .publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.2rem;
+  margin-top: 0.65rem;
+}
+.publications-content .publication-links a {
+  color: #a43b32;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.publications-content .publication-links a::before {
+  content: '[';
+}
+.publications-content .publication-links a::after {
+  content: ']';
+}
+.publications-content .publication-links a:hover {
+  color: #6e211b;
+  text-decoration: underline;
+}
+@media (max-width: 34em) {
+  .publications-content .publication-year {
+    margin-bottom: 2.8rem;
+  }
+  .publications-content .publication-item {
+    grid-template-columns: 6.2rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+  .publications-content .publication-venue {
+    width: 6.2rem;
+    padding: 0.5rem 0.35rem;
+    font-size: 1.05rem;
+  }
+  .publications-content .publication-title {
+    font-size: 1.7rem;
+  }
+  .publications-content .publication-authors {
+    font-size: 1.4rem;
+  }
+  .publications-content .publication-meta {
+    font-size: 1.35rem;
+  }
+}
 .page pre,
 .page .highlight {
   overflow: auto;
