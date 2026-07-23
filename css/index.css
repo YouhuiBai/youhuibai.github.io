@@ -1,6 +1,37 @@
 .publications-page .page-title {
   margin-bottom: 1rem;
 }
+.publications-content .publication-note {
+  margin: 0 0 1.8rem;
+  color: #737a80;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+.publications-content .publication-note strong {
+  color: #454b50;
+  font-weight: 600;
+}
+.publications-content .publication-note a {
+  color: #174f78;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+.publications-content .publication-note a:hover {
+  color: #a43b32;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.publications-content .corresponding-marker {
+  margin-left: 0.1rem;
+  color: #a43b32;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0;
+  vertical-align: super;
+}
 .publications-content .publication-year {
   margin-bottom: 3.6rem;
 }
@@ -28,6 +59,12 @@
 .publications-content .publication-item:last-child {
   border-bottom: 0;
 }
+.publications-content .publication-labels {
+  display: flex;
+  width: 8.4rem;
+  flex-direction: column;
+  gap: 0.55rem;
+}
 .publications-content .publication-venue {
   box-sizing: border-box;
   width: 8.4rem;
@@ -42,6 +79,20 @@
   line-height: 1.25;
   text-align: center;
   overflow-wrap: anywhere;
+}
+.publications-content .publication-award {
+  box-sizing: border-box;
+  width: 8.4rem;
+  padding: 0.5rem 0.4rem;
+  border: 1px solid #c58a18;
+  border-radius: 4px;
+  background: #fff7df;
+  color: #7b4807;
+  font-family: Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
 }
 .publications-content .publication-body {
   min-width: 0;
@@ -116,6 +167,14 @@
     width: 6.2rem;
     padding: 0.5rem 0.35rem;
     font-size: 1.05rem;
+  }
+  .publications-content .publication-labels {
+    width: 6.2rem;
+  }
+  .publications-content .publication-award {
+    width: 6.2rem;
+    padding: 0.45rem 0.25rem;
+    font-size: 0.95rem;
   }
   .publications-content .publication-title {
     font-size: 1.7rem;
