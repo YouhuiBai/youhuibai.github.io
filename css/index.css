@@ -127,6 +127,133 @@
     font-size: 1.35rem;
   }
 }
+.honors-page {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+.honors-page .page-title {
+  margin-bottom: 1rem;
+}
+.honors-content {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.honors-content .honors-section {
+  min-width: 0;
+  max-width: 100%;
+  margin-bottom: 4.2rem;
+}
+.honors-content .honors-section-title {
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #33434d;
+  color: #202428;
+  font-size: 2.4rem;
+  line-height: 1.25;
+}
+.honors-content .honors-year-group {
+  display: grid;
+  grid-template-columns: 8.4rem minmax(0, 1fr);
+  gap: 1.6rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #d9dde1;
+}
+.honors-content .honors-year-group:last-child {
+  border-bottom: 0;
+}
+.honors-content .honors-year {
+  margin: 0;
+  color: #a43b32;
+  font-family: Arial, sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.honors-content .academic-service-group {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #d9dde1;
+}
+.honors-content .academic-service-group:last-child {
+  border-bottom: 0;
+}
+.honors-content .academic-service-title {
+  margin: 0 0 1.2rem;
+  color: #a43b32;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.honors-content .honors-list {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.honors-content .honors-item {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 1.3rem 1.5rem;
+}
+.honors-content .honors-item:last-child {
+  padding-bottom: 0;
+}
+.honors-content .honors-item::before {
+  position: absolute;
+  top: 0.72rem;
+  left: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #33434d;
+  content: '';
+}
+.honors-content .honors-item-title {
+  margin: 0;
+  color: #202428;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.honors-content .honors-item-meta {
+  margin: 0.3rem 0 0;
+  color: #60676d;
+  font-size: 1.45rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.honors-content .honors-item-detail::before {
+  content: ' · ';
+}
+@media (max-width: 34em) {
+  .honors-content .honors-section {
+    margin-bottom: 3.2rem;
+  }
+  .honors-content .honors-year-group {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.55rem;
+    padding: 1.2rem 0;
+  }
+  .honors-content .honors-year {
+    font-size: 1.45rem;
+  }
+  .honors-content .academic-service-group {
+    padding: 1.2rem 0;
+  }
+  .honors-content .academic-service-title {
+    margin-bottom: 1rem;
+    font-size: 1.55rem;
+  }
+  .honors-content .honors-item-title {
+    font-size: 1.55rem;
+  }
+  .honors-content .honors-item-meta {
+    font-size: 1.35rem;
+  }
+}
 .page pre,
 .page .highlight {
   overflow: auto;
